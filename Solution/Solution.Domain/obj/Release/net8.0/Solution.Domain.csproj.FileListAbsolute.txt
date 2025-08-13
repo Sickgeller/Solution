@@ -1,0 +1,12 @@
+C:\Users\Administrator\Solution\Solution.Domain\bin\Release\net8.0\Solution.Domain.deps.json
+C:\Users\Administrator\Solution\Solution.Domain\bin\Release\net8.0\Solution.Domain.dll
+C:\Users\Administrator\Solution\Solution.Domain\bin\Release\net8.0\Solution.Domain.pdb
+C:\Users\Administrator\Solution\Solution.Domain\obj\Release\net8.0\Solution.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Solution\Solution.Domain\obj\Release\net8.0\Solution.Domain.AssemblyInfoInputs.cache
+C:\Users\Administrator\Solution\Solution.Domain\obj\Release\net8.0\Solution.Domain.AssemblyInfo.cs
+C:\Users\Administrator\Solution\Solution.Domain\obj\Release\net8.0\Solution.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Solution\Solution.Domain\obj\Release\net8.0\Solution.Domain.sourcelink.json
+C:\Users\Administrator\Solution\Solution.Domain\obj\Release\net8.0\Solution.Domain.dll
+C:\Users\Administrator\Solution\Solution.Domain\obj\Release\net8.0\refint\Solution.Domain.dll
+C:\Users\Administrator\Solution\Solution.Domain\obj\Release\net8.0\Solution.Domain.pdb
+C:\Users\Administrator\Solution\Solution.Domain\obj\Release\net8.0\ref\Solution.Domain.dll
