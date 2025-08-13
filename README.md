@@ -17,12 +17,8 @@
 - [DB 준비(마이그레이션/시드)](#db-준비마이그레이션시드)
 - [실행(개발)](#실행개발)
 - [배포/실행(릴리스)](#배포실행릴리스)
-- [MSSQL 전환](#mssql-전환)
 - [사용 방법](#사용-방법)
 - [트러블슈팅](#트러블슈팅)
-- [로드맵(선택)](#로드맵선택)
-- [라이선스](#라이선스)
-
 ---
 
 ## 주요 기능
@@ -119,18 +115,7 @@ dotnet publish .\Solution\Solution.csproj -c Release -r win-x64 --self-contained
 dotnet publish .\Solution.WinForms\Solution.WinForms.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true
 ```
 전달물: 각 프로젝트 `bin\Release\net8.0-windows\win-x64\publish\` 폴더 내용
-
-## MSSQL 전환
-- 연결문자열만 MSSQL로 교체(위 예시 참고)
-- SQL 로그인 필요 시:
-```sql
-CREATE LOGIN meslite_app WITH PASSWORD='StrongPass!123', CHECK_POLICY=ON;
-IF DB_ID('MesLite') IS NULL CREATE DATABASE MesLite;
-USE MesLite;
-CREATE USER meslite_app FOR LOGIN meslite_app;
-ALTER ROLE db_owner ADD MEMBER meslite_app;
-```
-- 방화벽/TCP 활성화(원격 접속 시), Encrypt=True 유지
+rue 유지
 
 ## 사용 방법
 - WPF
@@ -150,9 +135,3 @@ ALTER ROLE db_owner ADD MEMBER meslite_app;
 Get-Process Solution, Solution.WinForms -ErrorAction SilentlyContinue | Stop-Process -Force
 ```
 
-## 로드맵(선택)
-- CSV/Excel 내보내기, 단축키(F5/Ctrl+N/Ctrl+S), 로깅(Serilog)
-- 실시간 차트(작업지시 추이), 영상/오버레이, 3D(HelixToolkit) 데모
-
-## 라이선스
-포트폴리오 예제 코드(비상업적 용도).
