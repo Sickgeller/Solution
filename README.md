@@ -14,7 +14,6 @@
 - [프로젝트 구조](#프로젝트-구조)
 - [사전 준비](#사전-준비)
 - [설정(appsettings.json)](#설정appsettingsjson)
-- [DB 준비(마이그레이션/시드)](#db-준비마이그레이션시드)
 - [실행(개발)](#실행개발)
 - [배포/실행(릴리스)](#배포실행릴리스)
 - [사용 방법](#사용-방법)
@@ -81,17 +80,6 @@ MSSQL(Windows 인증) 예시:
 Server=localhost\SQLEXPRESS;Database=MesLite;Trusted_Connection=True;Encrypt=True;TrustServerCertificate=True;
 ```
 
-## DB 준비(마이그레이션/시드)
-```powershell
-# (선택) LocalDB 시작
-sqllocaldb start MSSQLLocalDB
-
-# 마이그레이션 적용 (솔루션 루트)
-dotnet ef database update -s .\Solution\Solution.csproj -p .\Solution.Data\Solution.Data.csproj
-
-# (선택) 더미 500건 시드
-dotnet run --project .\Solution.Seed\Solution.Seed.csproj
-```
 
 ## 실행(개발)
 - WPF
