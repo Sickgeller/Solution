@@ -13,10 +13,11 @@ namespace Solution.Data
         public MesLiteDbContext CreateDbContext(string[] args)
         {
             var opts = new DbContextOptionsBuilder<MesLiteDbContext>()
-                .UseSqlServer(
-                    "Server=(localdb)\\MSSQLLocalDB;Database=MesLite;Trusted_Connection=True;Encrypt=True;TrustServerCertificate=True;",
-                    sql => sql.EnableRetryOnFailure(5, TimeSpan.FromSeconds(2), null))
-                .Options;
+                 .UseSqlServer(
+                     //"Server=localhost\\SQLEXPRESS;Database=MesLite;Trusted_Connection=True;Encrypt=True;TrustServerCertificate=True;",
+                     "Server=localhost\\SQLEXPRESS;Database=MesLite;Trusted_Connection=True;Encrypt=True;TrustServerCertificate=True;",
+                     sql => sql.EnableRetryOnFailure(5, TimeSpan.FromSeconds(2), null))
+                 .Options;
             return new MesLiteDbContext(opts);
         }
     }
